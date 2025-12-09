@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt 26</title>
+    <style>
+        body {
+            display: block;
+        }
+
+        header,
+        footer {
+            background-color: yellow;
+            height: 100px;
+        }
+
+        footer {
+            clear: both;
+            background-color: orange;
+        }
+
+        section {
+            height: 400px;
+        }
+        section#s1 {
+            float: left;
+            width: 33.33%;
+            height: 400px;
+            background-color: red;
+        }
+
+        section#s2 {
+            float: left;
+            width: 33.33%;
+            height: 400px;
+            background-color: green;
+        }
+
+        section#s3 {
+            width: 33.33%;
+            height: 400px;
+            background-color: blue;
+            float: left;
+        }
+        div {
+            border: 1px solid black;
+            border-radius: 12px;
+            margin: 26px;
+            padding: 16px;
+            width: auto;
+            background-color: lightgray;
+            text-align: center;
+            text-decoration: none;
+            animation: bounce 800ms cubic-bezier(.36, .07, .19, .97) infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-14px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div><a href="index2.html">Link na stronę gdzie testowałem @keyframes,animation,transform,transition</a></div>
+    <header></header>
+
+    <section id="s1"></section>
+    <section id="s2"></section>
+    <section id="s3"></section>
+
+    <footer></footer>
+</body>
+
+</html>
